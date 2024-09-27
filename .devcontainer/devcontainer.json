@@ -1,5 +1,5 @@
 {
-    "name": "epbf-devcontainer",
+    "name": "ays-devcontainer",
     "build": {
         "dockerfile": "Dockerfile"
     },
