@@ -2,7 +2,7 @@
 
 Aya is an eBPF library for Rust, from `Environment` section on [aya-rs/book](https://aya-rs.dev/book/start/development/), `bpf-linker` only works on `linux x86_64 system`
 
-To simplify the development process, we can use [Devcontainer](https://containers.dev/) to build and run the eBPF program.
+To simplify the dev env setup, we can use [Devcontainer](https://containers.dev/) to build and run eBPF program in Rust.
 
 for more details, please take a look at `devcontainer.json` and `Dockerfile`.
 
