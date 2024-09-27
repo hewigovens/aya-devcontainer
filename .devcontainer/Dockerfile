@@ -6,7 +6,8 @@ RUN apt-get update \
   && wget https://apt.llvm.org/llvm.sh \
   && chmod a+x llvm.sh \
   && ./llvm.sh 19 \
-  && apt install -y libclang-19-dev libpolly-19-dev libzstd-dev
+  && apt install -y libclang-19-dev libpolly-19-dev libzstd-dev bpftool \
+  && apt autoremove -y
 
 # Install Rust with nightly sources
 ENV RUST_VERSION=stable
