@@ -20,7 +20,7 @@ for more details, please take a look at `devcontainer.json` and `Dockerfile`.
 - Open the command palette (Shift+Command+P)
 - Select `Dev Containers: Reopen in Container`
 
-Generate ebpf app from [aya-template](https://github.com/aya-rs/aya-template)
+### Generate ebpf app from [aya-template](https://github.com/aya-rs/aya-template)
 
 ```bash
 cargo generate https://github.com/aya-rs/aya-template
@@ -29,6 +29,14 @@ cd <your_app_path>
 
 # build both ebpf and userspace app
 cargo xtask build
+```
+
+### Generate vmlinux.h/rs
+
+```bash
+bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
+
+aya-tool generate task_struct > vmlinux.rs
 ```
 
 ## Credits

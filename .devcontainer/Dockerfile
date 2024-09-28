@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/rust:1-bullseye
+FROM mcr.microsoft.com/devcontainers/rust:1-bookworm
 
 # Install llvm
 RUN apt-get update \
